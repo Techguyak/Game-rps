@@ -7,59 +7,59 @@
 </head>
 <body>
 <button onclick="
-  let computerplay =  function1()
+  let compplay1 =  cplay()
 
    let result='';
 
-   if (computerplay ==='rock')
+   if (compplay1 ==='rock')
    {
     result='tie';
    }
-   else if (computerplay ==='paper')
+   else if (compplay1 ==='paper')
    {
     result ='lose';
    }
-   else if(computerplay === 'scissors')
+   else if(compplay1 === 'scissors')
    result ='win'
 
-alert(`rock,${computerplay}. ${result}`);">rock</button>
+alert(`rock,${compplay1}. ${result}`);">rock</button>
 <button onclick="
-let computerplay = function1();
+let compplay2 = cplay();
 
 
 
 
-if (computerplay ==='rock')
+if (compplay2 ==='rock')
 {
  result='win';
 }
-else if (computerplay ==='paper')
+else if (compplay2 ==='paper')
 {
  result ='tie';
 }
-else if(computerplay === 'scissors')
+else if(compplay2 === 'scissors')
 result ='lose'
 
-alert(`paper,${computerplay}. ${result}`);">paper</button>
+alert(`paper,${compplay2}. ${result}`);">paper</button>
 <button onclick="
-    let computerplay =  function1();
+    let compplay3 =  cplay();
 
-if (computerplay ==='rock')
+if (compplay3 ==='rock')
 {
  result='lose';
 }
-else if (computerplay ==='paper')
+else if (compplay3 ==='paper')
 {
  result ='win';
 }
-else if(computerplay === 'scissors')
+else if(compplay3 === 'scissors')
 result ='tie'
 
-alert(`scissors,${computerplay}. ${result}`);">scissors</button>
+alert(`scissors,${compplay3}. ${result}`);">scissors</button>
 
 <script>
     
-    function function1(){
+    function cplay(){
         const randomno= Math.random();
         let computerplay='';
    if(randomno>= 0 && randomno < 1/3)
