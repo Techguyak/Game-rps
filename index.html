@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="
+  let computerplay =  function1()
+
+   let result='';
+
+   if (computerplay ==='rock')
+   {
+    result='tie';
+   }
+   else if (computerplay ==='paper')
+   {
+    result ='lose';
+   }
+   else if(computerplay === 'scissors')
+   result ='win'
+
+alert(`rock,${computerplay}. ${result}`);">rock</button>
+<button onclick="
+let computerplay = function1();
+
+
+
+
+if (computerplay ==='rock')
+{
+ result='win';
+}
+else if (computerplay ==='paper')
+{
+ result ='tie';
+}
+else if(computerplay === 'scissors')
+result ='lose'
+
+alert(`paper,${computerplay}. ${result}`);">paper</button>
+<button onclick="
+    let computerplay =  function1();
+
+if (computerplay ==='rock')
+{
+ result='lose';
+}
+else if (computerplay ==='paper')
+{
+ result ='win';
+}
+else if(computerplay === 'scissors')
+result ='tie'
+
+alert(`scissors,${computerplay}. ${result}`);">scissors</button>
+
+<script>
+    
+    function function1(){
+        const randomno= Math.random();
+        let computerplay='';
+   if(randomno>= 0 && randomno < 1/3)
+   {
+    computerplay = 'rock'; 
+   }
+   else if(randomno>= 1/3 && randomno < 2/3)
+   {
+    computerplay = 'paper';
+   }
+   else if (randomno>= 2/3 && randomno < 1)
+   {
+    computerplay = 'scissors';
+   }
+           return computerplay;
+    }
+</script>
+<script src="index.js"></script>
+</body>
+</html>
