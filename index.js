@@ -1,3 +1,10 @@
+const panel = {
+    wins : 0,
+    losses : 0,
+    Tie : 0
+};
+
+
 function complay(){
     const randomno= Math.random();
     let computerplay='';
@@ -56,5 +63,15 @@ function rslt(cosplay){
             result ='tie'
                 }
 
-alert(`${cosplay},${computerplay}. ${result}`);
+                if(result==='win'){
+                    panel.wins +=1;
+                }
+                else if(result ==='lose'){
+                    panel.losses +=1;
+                }
+                else if(result==='tie'){
+                    panel.Tie += 1;
+                }
+alert(`${cosplay},${computerplay}. ${result}
+wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`);
 }
