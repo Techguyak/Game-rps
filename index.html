@@ -6,77 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-<button onclick="
-  let compplay1 =  cplay()
+<button onclick="rslt('rock');">rock</button>
+<button onclick="rslt('paper')">paper</button>
+<button onclick="rslt('scissors')">scissors</button>
 
-   let result='';
-
-   if (compplay1 ==='rock')
-   {
-    result='tie';
-   }
-   else if (compplay1 ==='paper')
-   {
-    result ='lose';
-   }
-   else if(compplay1 === 'scissors')
-   result ='win'
-
-alert(`rock,${compplay1}. ${result}`);">rock</button>
-<button onclick="
-let compplay2 = cplay();
-
-
-
-
-if (compplay2 ==='rock')
-{
- result='win';
-}
-else if (compplay2 ==='paper')
-{
- result ='tie';
-}
-else if(compplay2 === 'scissors')
-result ='lose'
-
-alert(`paper,${compplay2}. ${result}`);">paper</button>
-<button onclick="
-    let compplay3 =  cplay();
-
-if (compplay3 ==='rock')
-{
- result='lose';
-}
-else if (compplay3 ==='paper')
-{
- result ='win';
-}
-else if(compplay3 === 'scissors')
-result ='tie'
-
-alert(`scissors,${compplay3}. ${result}`);">scissors</button>
-
-<script>
-    
-    function cplay(){
-        const randomno= Math.random();
-        let computerplay='';
-   if(randomno>= 0 && randomno < 1/3)
-   {
-    computerplay = 'rock'; 
-   }
-   else if(randomno>= 1/3 && randomno < 2/3)
-   {
-    computerplay = 'paper';
-   }
-   else if (randomno>= 2/3 && randomno < 1)
-   {
-    computerplay = 'scissors';
-   }
-           return computerplay;
-    }
-</script>
 <script src="index.js"></script>
 </body>
 </html>
