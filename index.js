@@ -1,10 +1,18 @@
-const panel = {
+let panel = JSON.parse( localStorage.getItem('panel'))||
+{
     wins : 0,
     losses : 0,
     Tie : 0
 };
-
-
+    //  if (panel === null){
+    //   panel =    {
+            
+    //  wins : 0,
+    //  losses : 0,
+    //  Tie : 0
+ 
+    //     };
+    // }
 function complay(){
     const randomno= Math.random();
     let computerplay='';
@@ -72,6 +80,7 @@ function rslt(cosplay){
                 else if(result==='tie'){
                     panel.Tie += 1;
                 }
+                localStorage.setItem('panel',JSON.stringify(panel));
 alert(`${cosplay},${computerplay}. ${result}
 wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`);
 }
