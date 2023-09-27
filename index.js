@@ -81,6 +81,6 @@ function rslt(cosplay){
                     panel.Tie += 1;
                 }
                 localStorage.setItem('panel',JSON.stringify(panel));
-alert(`${cosplay},${computerplay}. ${result}
-wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`);
+    alert(`${cosplay},${computerplay}. ${result}
+    wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`);
 }
