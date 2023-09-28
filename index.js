@@ -13,8 +13,11 @@ let panel = JSON.parse( localStorage.getItem('panel'))||
  
     //     };
     // }
+upd_panel();
+
+
 function complay(){
-    const randomno= Math.random();
+const randomno= Math.random();
     let computerplay='';
         if(randomno>= 0 && randomno < 1/3)
         {
@@ -81,6 +84,14 @@ function rslt(cosplay){
                     panel.Tie += 1;
                 }
                 localStorage.setItem('panel',JSON.stringify(panel));
+
+                upd_panel();
+
     alert(`${cosplay},${computerplay}. ${result}
     wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`);
+ }
+
+ function upd_panel(){
+    document.querySelector('.p-panel')
+        .innerHTML = `wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`;
 }
