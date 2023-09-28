@@ -20,13 +20,13 @@ header h1{
     padding: 20px;
 }
 .icon{
-    height: 100px;
+    height: 90px;
 }
 .btn-icon{
     background: transparent;
     border: none;
-    border: 3px solid  rgb(49, 44, 44);
-    padding: 70px;
+    border: 3px solid  black;
+    padding: 60px;
     margin-right: 40px;
     
 }
@@ -34,6 +34,36 @@ header h1{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+.res{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.panel-icon{
+    height: 60px;
+    font-size: 30px;
+}
+.panel-box-head{
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+
+
+}
+.panel-box{
+    border: 2px solid white;
+    padding: 30px;
+    line-height: 40px;
+}
+.reset{
+    border: none;
+    background-color: beige;
+    height:30px ;
+    width:100% ;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
 }
 
     

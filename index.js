@@ -92,12 +92,12 @@ function rslt(cosplay){
     document.querySelector('.res')
         .innerHTML=result;
     document.querySelector('.play')
-        .innerHTML =`You Picked ${cosplay}. Computer Picked ${computerplay}`;
+        .innerHTML =`You <img src="./images/${cosplay}.png" class="panel-icon">Computer<img src="/images/${computerplay}.png" class="panel-icon">`;
  }
 
  function upd_panel(){
     document.querySelector('.p-panel').
-        innerHTML = `wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`;
+        innerHTML = `wins ${panel.wins}  losses ${panel.losses}  Tie ${panel.Tie}`;
 }
 
     

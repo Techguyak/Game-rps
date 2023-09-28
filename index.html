@@ -14,9 +14,12 @@
 <button class="btn-icon" onclick="rslt('paper')"><img src="./images/paper.png" class="icon"></button>
 <button class="btn-icon" onclick="rslt('scissors')"><img src="./images/scissors.png" class="icon"></button>
 </div>
+<div class="panel-box-head">
+<div class="panel-box">
 <p class="res" id="res"></p>
 <p class="play" id="res"></p>
 <p class="p-panel"></p>
+
 <button onclick="
     
     panel.wins =0;
@@ -24,7 +27,9 @@
     panel.Tie =0;
     localStorage.removeItem('panel')
     upd_panel();
-    ">Reset</button>
+    " class="reset">Reset</button>
+    </div>
+</div>
     
 <script src="index.js"></script>
 </body>
