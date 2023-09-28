@@ -102,7 +102,7 @@ function rslt(cosplay){
 function calcu(){
 const val = document.querySelector('.cost-cal');
 let vale =Number(val.value);
-
+  
     if(vale < 50){
         vale+=10;
         
