@@ -87,11 +87,16 @@ function rslt(cosplay){
 
                 upd_panel();
 
-    alert(`${cosplay},${computerplay}. ${result}
-    wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`);
+    // alert(`${cosplay},${computerplay}. ${result}
+    // wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`);
+    document.querySelector('.res')
+        .innerHTML=result;
+    document.querySelector('.play')
+        .innerHTML =`You Picked ${cosplay}. Computer Picked ${computerplay}`;
  }
 
  function upd_panel(){
-    document.querySelector('.p-panel')
-        .innerHTML = `wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`;
+    document.querySelector('.p-panel').
+        innerHTML = `wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`;
 }
+    

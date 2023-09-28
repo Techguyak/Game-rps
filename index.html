@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPS_GAME</title>
 </head>
+<style>
+    body{position: relative;
+    top: 30vh;
+    left: 90vh;}
+</style>
 <body>
 <button onclick="rslt('rock');">rock</button>
 <button onclick="rslt('paper')">paper</button>
 <button onclick="rslt('scissors')">scissors</button>
+<p class="res" id="res"></p>
+<p class="play" id="res"></p>
 <p class="p-panel"></p>
 <button onclick="
+    
     panel.wins =0;
     panel.losses =0;
     panel.Tie =0;
-    localStorage.removeItem('panel')">Reset</button>
-
+    localStorage.removeItem('panel')
+    upd_panel();
+    ">Reset</button>
+    
 <script src="index.js"></script>
 </body>
 </html>
