@@ -99,4 +99,13 @@ function rslt(cosplay){
     document.querySelector('.p-panel').
         innerHTML = `wins ${panel.wins},losses ${panel.losses},Tie ${panel.Tie}`;
 }
+function calcu(){
+const val = document.querySelector('.cost-cal');
+let vale =Number(val.value);
+
+    if(vale < 50){
+        vale+=10;
+        
+    }
+}
     
