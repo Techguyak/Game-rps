@@ -92,7 +92,7 @@ function rslt(cosplay){
     document.querySelector('.res')
         .innerHTML=result;
     document.querySelector('.play')
-        .innerHTML =`You <img src="./images/${cosplay}.png" class="panel-icon">Computer<img src="/images/${computerplay}.png" class="panel-icon">`;
+        .innerHTML =`You <img src="./images/${cosplay}.png" class="panel-icon">Computer<img src="./images/${computerplay}.png" class="panel-icon">`;
  }
 
  function upd_panel(){
