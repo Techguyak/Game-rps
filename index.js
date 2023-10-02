@@ -16,7 +16,12 @@ let panel = JSON.parse( localStorage.getItem('panel'))||
 upd_panel();
 
 document.querySelector('.r-btn').addEventListener('click',() =>{
-    rslt('rock')
+    rslt('rock');
+});
+document.querySelector('.p-btn').addEventListener('click',() =>{
+    rslt('paper');
+});document.querySelector('.s-btn').addEventListener('click',() =>{
+    rslt('scissors');
 });
 
 
@@ -31,6 +36,20 @@ document.body.addEventListener('keydown',(event) =>{
         rslt('scissors');
     }
 });
+
+document.querySelector('.panel-box-btn').addEventListener('click',()=>{
+    panel.wins =0;
+    panel.losses =0;
+    panel.Tie =0;
+    localStorage.removeItem('panel')
+    upd_panel();
+});
+
+document.querySelector('.autoplay').addEventListener('click',()=>{
+    autoplay();
+});
+
+
 
 let chance =true;
 let isplay;

@@ -10,8 +10,9 @@
     <header><h1>GAME -- STONE PAPER SCISSOR --</h1></header>
  <div class="btn-head">   
 <button class="btn-icon r-btn"><img src="./images/rock.png" class="icon"></button>
-<button class="btn-icon r-btn" onclick="rslt('paper')"><img src="./images/paper.png" class="icon"></button>
-<button class="btn-icon" onclick="rslt('scissors')"><img src="./images/scissors.png" class="icon"></button>
+<button class="btn-icon p-btn"><img src="./images/paper.png" class="icon"></button>
+<button class="btn-icon s-btn" 
+><img src="./images/scissors.png" class="icon"></button>
 </div>
 <div class="panel-box-head">
 <div class="panel-box">
@@ -19,19 +20,10 @@
 <p class="play" id="res"></p>
 <p class="p-panel"></p>
 
-<button onclick="
-    
-    panel.wins =0;
-    panel.losses =0;
-    panel.Tie =0;
-    localStorage.removeItem('panel')
-    upd_panel();
-    " class="reset">Reset</button>
-    <button class="autoplay"
-      onclick="autoplay()">Autoplay</button>
+<button class="panel-box-btn reset">Reset</button>
+    <button class="autoplay">Autoplay</button>
     </div>
 </div>
-    
 <script src="index.js"></script>
 </body>
 </html>
