@@ -15,12 +15,29 @@ let panel = JSON.parse( localStorage.getItem('panel'))||
     // }
 upd_panel();
 
+document.querySelector('.r-btn').addEventListener('click',() =>{
+    rslt('rock')
+});
+
+
+document.body.addEventListener('keydown',(event) =>{
+    if(event.key === 'r'){
+        rslt('rock');
+    }
+    else if(event.key === 'p'){
+        rslt('paper');
+    }
+    else if (event.key=== 's'){
+        rslt('scissors');
+    }
+});
+
 let chance =true;
 let isplay;
 function autoplay(){
     
     if(chance){
-     isplay =  setInterval( function (){
+     isplay =  setInterval(() => {
             const cosplay = complay();
             rslt(cosplay)
         } 
