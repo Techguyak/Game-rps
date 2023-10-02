@@ -15,6 +15,25 @@ let panel = JSON.parse( localStorage.getItem('panel'))||
     // }
 upd_panel();
 
+let chance =true;
+let isplay;
+function autoplay(){
+    
+    if(chance){
+     isplay =  setInterval( function (){
+            const cosplay = complay();
+            rslt(cosplay)
+        } 
+    ,1000);
+         chance = false;
+    } 
+    else{
+        clearInterval(isplay);
+        chance = true;
+    }
+
+
+}
 
 function complay(){
 const randomno= Math.random();

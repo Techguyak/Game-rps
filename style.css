@@ -61,7 +61,7 @@ header h1{
     padding: 30px;
     line-height: 40px;
 }
-.reset{
+.reset,.autoplay{
     border: none;
     background-color: beige;
     height:30px ;
@@ -69,6 +69,7 @@ header h1{
     color: black;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
 }
 @media (max-width:420px) {
     header h1{
