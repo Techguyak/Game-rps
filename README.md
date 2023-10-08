@@ -1,1 +1,1 @@
-[#GAME--RPS](https://techguyak.github.io/Game-rps/)
+# [GAME--RPS](https://techguyak.github.io/Game-rps/)
